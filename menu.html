@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Меню и цены — Пироговая · Новый Уренгой</title>
-<meta name="description" content="Меню Пироговой в Новом Уренгое: свадебный каравай 3500 ₽, мини-пироги, эчпочмаки, пирожки. Актуальные цены с Яндекс Карт.">
+<title>Каталог — все пироги и цены · Пироговая, Новый Уренгой</title>
+<meta name="description" content="Полный каталог Пироговой (Новый Уренгой): 30 позиций с ценами — курник, киши, губадия, каравай, эчпочмаки, блины, сладкие пироги, кофе. Цены с Яндекс Карт.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -31,65 +31,165 @@
 </header>
 
 <section class="page-hero">
-  <div class="ghost">МЕНЮ</div>
+  <div class="ghost">30</div>
   <div class="wrap">
     <div class="crumbs reveal"><a href="index.html" data-label="🏠">Главная</a> / Меню</div>
-    <span class="tagline reveal" style="display:inline-block;color:var(--honey);font-size:12px;font-weight:800;letter-spacing:.28em;text-transform:uppercase">Обновлено 25 августа · цены с Яндекс Карт</span>
-    <h2 class="reveal d1" style="font-family:var(--font-display);font-size:clamp(30px,5vw,60px)">Меню и <span class="accent">цены</span></h2>
+    <span class="tagline reveal" style="display:inline-block;color:var(--honey);font-size:12px;font-weight:800;letter-spacing:.28em;text-transform:uppercase">Полная выгрузка · Яндекс Карты · обновлено 25 августа</span>
+    <h2 class="reveal d1" style="font-family:var(--font-display);font-size:clamp(30px,5vw,60px)">Каталог: <span class="accent">все товары и цены</span></h2>
+    <p class="reveal d2" style="color:var(--muted);margin-top:14px;max-width:620px">Всё, что печём — от пирожка за 75 ₽ до закрытого пирога с сёмгой за 4200 ₽. Описания — со слов пекарни.</p>
   </div>
 </section>
 
-<section style="padding-top:20px">
+<section style="padding-top:10px">
   <div class="wrap">
+    <div class="filters reveal">
+      <button class="fchip active" data-filter="all">Всё<span class="n">30</span></button>
+      <button class="fchip" data-filter="snack">Перекус<span class="n">6</span></button>
+      <button class="fchip" data-filter="savory">Сытные пироги<span class="n">10</span></button>
+      <button class="fchip" data-filter="sweet">Сладкие<span class="n">10</span></button>
+      <button class="fchip" data-filter="sets">Наборы и каравай<span class="n">3</span></button>
+      <button class="fchip" data-filter="drinks">Напитки<span class="n">1</span></button>
+    </div>
+
+    <!-- ПЕРЕКУС -->
+    <div class="sec-head reveal" id="cat-snack">
+      <span class="tagline">Перекус</span>
+      <h2>Штучное и <span class="accent">блины</span></h2>
+    </div>
     <div class="grid g3">
-      <article class="card tilt reveal d1">
-        <div class="ph"><span class="badge">Под заказ</span><img src="assets/img/photo10.jpg" alt="Каравай" loading="lazy"></div>
-        <div class="body"><h3>Каравай свадебный</h3><p>Дрожжевое сдобное тесто, 1,6 кг. Ручной декор, приготовления к вашему дню.</p><span class="price">3500 ₽</span></div>
-      </article>
-      <article class="card tilt reveal d2">
-        <div class="ph"><span class="badge">Набор</span><img src="assets/img/photo01.jpg" alt="Мини-пироги" loading="lazy"></div>
-        <div class="body"><h3>Мини-пироги, 3 вида</h3><p>С яблоком и брусникой, с вишней, с лимоном. Три вкуса в одной коробке.</p><span class="price">2160 ₽</span></div>
-      </article>
-      <article class="card tilt reveal d3">
-        <div class="ph"><span class="badge">Сытно</span><img src="assets/img/photo24.jpg" alt="Эчпочмак" loading="lazy"></div>
-        <div class="body"><h3>Эчпочмак 110 г</h3><p>Куриное филе, картофель, лук. Горячий, с хрустящей корочкой.</p><span class="price">135 ₽</span></div>
-      </article>
+      <article class="item reveal d1" data-cat="snack"><span class="idx">01</span>
+        <h3>Пирожок с капустой</h3><div class="wt">100 г</div><p>Классика в румяном тесте.</p>
+        <div class="row"><span class="price">90 ₽</span></div></article>
+      <article class="item reveal d2" data-cat="snack"><span class="idx">02</span>
+        <h3>Пирожок с яблоком и брусникой</h3><div class="wt">тонкое бездрожжевое тесто</div><p>На тонком бездрожжевом тесте с сочной начинкой внутри.</p>
+        <div class="row"><span class="price">110 ₽</span></div></article>
+      <article class="item reveal d3" data-cat="snack"><span class="idx">03</span>
+        <h3>Эчпочмак</h3><div class="wt">110 г</div><p>Пирожок с куриным филе, картофелем и луком.</p>
+        <div class="row"><span class="price">135 ₽</span></div></article>
+      <article class="item reveal d4" data-cat="snack"><span class="idx">04</span>
+        <h3>Блины</h3><div class="wt">20 шт</div><p>Домашние блины — целая стопка к чаю или к обеду.</p>
+        <div class="row"><span class="price">800 ₽</span></div></article>
+      <article class="item reveal d5" data-cat="snack"><span class="idx">05</span>
+        <h3>Постные дрожжевые пирожки</h3><div class="wt">ассортимент</div><p>На постном тесте с постной начинкой: вишня, яблоко-брусника, картошка, капуста.</p>
+        <div class="row"><span class="price">75 ₽</span></div></article>
+      <article class="item reveal d6" data-cat="snack"><span class="idx">06</span>
+        <h3>Блинчики в ассортименте</h3><div class="wt">от 15 шт</div><p>Начинки: мясо-лук (говядина), зелёный лук и яйцо, творог с зеленью, жульен, ветчина-сыр, сладкий творог, творог с изюмом, вишня, варёная сгущёнка.</p>
+        <div class="row"><span class="price">120 ₽</span></div></article>
     </div>
 
-    <div class="sec-head reveal" style="margin-top:70px">
-      <span class="tagline">Пирожки и выпечка</span>
-      <h2>Каждый день <span class="accent">из печи</span></h2>
+    <!-- СЫТНЫЕ -->
+    <div class="sec-head reveal" id="cat-savory" style="margin-top:80px">
+      <span class="tagline">Сытные пироги</span>
+      <h2>Большие пироги <span class="accent">к столу</span></h2>
     </div>
-    <div class="grid g2">
-      <article class="card reveal d1">
-        <div class="body" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
-          <div><h3>🥟 Пирожок с яблоком и брусникой</h3><p>Тонкое бездрожжевое тесто, кисло-сладкая начинка.</p></div>
-          <span class="price" style="flex-shrink:0">110 ₽</span>
-        </div>
-      </article>
-      <article class="card reveal d2">
-        <div class="body" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
-          <div><h3>🥬 Пирожок с капустой, 100 г</h3><p>Классика: нежная капуста в румяном тесте.</p></div>
-          <span class="price" style="flex-shrink:0">90 ₽</span>
-        </div>
-      </article>
+    <div class="grid g3">
+      <article class="item reveal d1" data-cat="savory"><span class="idx">07</span>
+        <h3>Капустный</h3><div class="wt">1,4 кг</div><p>Тушёная капуста с ноткой томата в бездрожжевом тесте.</p>
+        <div class="row"><span class="price">1300 ₽</span></div></article>
+      <article class="item reveal d2" data-cat="savory"><span class="idx">08</span>
+        <h3>Капуста с грибами</h3><div class="wt">1,6 кг</div><p>Сочная классическая начинка.</p>
+        <div class="row"><span class="price">1800 ₽</span></div></article>
+      <article class="item reveal d3" data-cat="savory"><span class="idx">09</span>
+        <h3>Киш с творогом, сыром и зеленью</h3><div class="wt">корзинка из рубленого теста</div><p>Сытный немясной пирог — «белковая бомба» в золотистой корзинке.</p>
+        <div class="row"><span class="price">1800 ₽</span></div></article>
+      <article class="item reveal d4" data-cat="savory"><span class="idx">10</span>
+        <h3>Курник</h3><div class="wt">1,75 кг · 8–10 порций</div><p>Куриное филе, картофель и лук томятся в собственном соку под румяной корочкой.</p>
+        <div class="row"><span class="price">2000 ₽</span></div></article>
+      <article class="item reveal d5" data-cat="savory"><span class="idx">11</span>
+        <h3>Мясо-капустный</h3><div class="wt">1,7 кг</div><p>Сочная сытная начинка удивит количеством и вкусом.</p>
+        <div class="row"><span class="price">2300 ₽</span></div></article>
+      <article class="item reveal d6" data-cat="savory"><span class="idx">12</span>
+        <h3>Говядина — картофель</h3><div class="wt">1,7 кг</div><p>Фарш из говядины с картофелем и луком, томлёные в золотистой корочке.</p>
+        <div class="row"><span class="price">2300 ₽</span></div></article>
+      <article class="item reveal d1" data-cat="savory"><span class="idx">13</span>
+        <h3>Киш «Жюльен» с курицей и грибами</h3><div class="wt">песочное тесто</div><p>Курица, грибы, жареный лук в сливках, под румяной сырной крышечкой.</p>
+        <div class="row"><span class="price">2300 ₽</span></div></article>
+      <article class="item reveal d2" data-cat="savory"><span class="idx">14</span>
+        <h3>Сёмга с картофелем</h3><div class="wt">1,75 кг</div><p>Сёмга с картофелем и луком, томлёные под румяной корочкой.</p>
+        <div class="row"><span class="price">3200 ₽</span></div></article>
+      <article class="item reveal d3" data-cat="savory"><span class="idx">15</span>
+        <h3>Киш с сёмгой и брокколи</h3><div class="wt">1,2 кг · открытый</div><p>Сёмга с брокколи в сметанно-сырном соусе под сырной крышечкой. Тонкая корзинка из рубленого теста.</p>
+        <div class="row"><span class="price">3200 ₽</span></div></article>
+      <article class="item reveal d4" data-cat="savory"><span class="idx">16</span>
+        <h3>Сёмга с брокколи закрытый</h3><div class="wt">закрытый пирог</div><p>На пресном тесте или постный вариант — на дрожжевом.</p>
+        <div class="row"><span class="price">4200 ₽</span></div></article>
     </div>
 
-    <div class="grid g3" style="margin-top:22px">
-      <div class="feat reveal d1"><span class="ico">❄️</span><h3>Заморозка</h3><p>Пироги можно взять впрок — хвалят в отзывах за формат заморозки.</p></div>
-      <div class="feat reveal d2"><span class="ico">☕</span><h3>Напитки</h3><p>Кофе с собой, чай, вода. Короткая пауза с тёплым пирожком.</p></div>
-      <div class="feat reveal d3"><span class="ico">📋</span><h3>Полный ассортимент</h3><p>Начинки меняются каждый день — звоните: <a href="tel:+79195501437" style="color:var(--honey)">+7 (919) 550-14-37</a></p></div>
+    <!-- СЛАДКИЕ -->
+    <div class="sec-head reveal" id="cat-sweet" style="margin-top:80px">
+      <span class="tagline">Сладкие пироги</span>
+      <h2>К чаю — <span class="accent">обязательные</span></h2>
+    </div>
+    <div class="grid g3">
+      <article class="item reveal d1" data-cat="sweet"><span class="idx">17</span>
+        <h3>Маковый сметанник</h3><div class="wt">1,1 кг</div><p>Сладкий молочный мак под классическим сметанником.</p>
+        <div class="row"><span class="price">1400 ₽</span></div></article>
+      <article class="item reveal d2" data-cat="sweet"><span class="idx">18</span>
+        <h3>Лимонник</h3><div class="wt">1 кг</div><p>Песочное тесто с ароматом лимона, натуральная начинка — лимон и сахар.</p>
+        <div class="row"><span class="price">1600 ₽</span></div></article>
+      <article class="item reveal d3" data-cat="sweet"><span class="idx">19</span>
+        <h3>Лимон с миндалём</h3><div class="wt">песочное тесто</div><p>Лимонная начинка с миндалём.</p>
+        <div class="row"><span class="price">1600 ₽</span></div></article>
+      <article class="item reveal d4" data-cat="sweet"><span class="idx">20</span>
+        <h3>Яблоко-брусника (песочный)</h3><div class="wt">1,2 кг · 24 см</div><p>Сладкий ароматный пирог на песочном тесте.</p>
+        <div class="row"><span class="price">1750 ₽</span></div></article>
+      <article class="item reveal d5" data-cat="sweet"><span class="idx">21</span>
+        <h3>Яблочно-брусничный дрожжевой</h3><div class="wt">1,35 кг · 29 см</div><p>Пирог из дрожжевого теста; можно сделать в постном варианте.</p>
+        <div class="row"><span class="price">1750 ₽</span></div></article>
+      <article class="item reveal d6" data-cat="sweet"><span class="idx">22</span>
+        <h3>Восточный</h3><div class="wt">1,2 кг</div><p>Курага, чернослив, изюм и грецкий орех в сладком соусе, хрустящий штрейзель сверху.</p>
+        <div class="row"><span class="price">1950 ₽</span></div></article>
+      <article class="item reveal d1" data-cat="sweet"><span class="idx">23</span>
+        <h3>Вишнёвый</h3><div class="wt">1,2 кг</div><p>Сладкое песочное тесто и вишня с кислинкой в сметанном соусе.</p>
+        <div class="row"><span class="price">1950 ₽</span></div></article>
+      <article class="item reveal d2" data-cat="sweet"><span class="idx">24</span>
+        <h3>Губадия сладкая</h3><div class="wt">1,8 кг</div><p>Национальный татарский слоёный пирог: корт, сладкий рис с сухофруктами и рубленое яйцо.</p>
+        <div class="row"><span class="price">2160 ₽</span></div></article>
+      <article class="item reveal d3" data-cat="sweet"><span class="idx">25</span>
+        <h3>Трёхслойник</h3><div class="wt">1,9 кг · пирог-торт</div><p>Грецкий орех, пюре из кураги, лимонная начинка. Специальное песочное тесто без яиц.</p>
+        <div class="row"><span class="price">3000 ₽</span></div></article>
+      <article class="item reveal d4" data-cat="sweet"><span class="idx">26</span>
+        <h3>Яблочно-брусничный XL</h3><div class="wt">дрожжевое тесто</div><p>Ароматное свежее дрожжевое тесто, сочная гармоничная начинка с кислинкой.</p>
+        <div class="row"><span class="price">3500 ₽</span></div></article>
     </div>
 
-    <p class="note reveal">Источник позиций и цен — карточка организации на <a href="https://yandex.com/maps/org/pirogovaya/86559750538/" target="_blank" rel="noopener" style="color:var(--honey)">Яндекс Картах</a>. Ассортимент может отличаться в течение дня.</p>
+    <!-- НАБОРЫ -->
+    <div class="sec-head reveal" id="cat-sets" style="margin-top:80px">
+      <span class="tagline">Наборы и праздник</span>
+      <h2>Собери <span class="accent">ассорти</span></h2>
+    </div>
+    <div class="grid g3">
+      <article class="item reveal d1" data-cat="sets"><span class="idx">27</span>
+        <h3>Набор мини-кишей</h3><div class="wt">по 3 шт каждого</div><p>Мини-версии кишей: творог-зелень-сыр, сёмга-брокколи, жульен.</p>
+        <div class="row"><span class="price">1950 ₽</span></div></article>
+      <article class="item reveal d2" data-cat="sets"><span class="idx">28</span>
+        <h3>Мини-пироги, 3 вида</h3><div class="wt">набор</div><p>Сладкие корзинки: яблоко-брусника, вишня, лимон. Удобно на природе, в дороге и чтобы попробовать всё сразу.</p>
+        <div class="row"><span class="price">2160 ₽</span></div></article>
+      <article class="item reveal d3" data-cat="sets"><span class="idx">29</span>
+        <h3>Каравай свадебный</h3><div class="wt">1,6 кг · под заказ</div><p>Дрожжевое сдобное тесто, ручной декор к вашему дню.</p>
+        <div class="row"><span class="price">3500 ₽</span></div></article>
+    </div>
+
+    <!-- НАПИТКИ -->
+    <div class="sec-head reveal" id="cat-drinks" style="margin-top:80px">
+      <span class="tagline">Напитки</span>
+      <h2>Кофе <span class="accent">с собой</span></h2>
+    </div>
+    <div class="grid g3">
+      <article class="item reveal d1" data-cat="drinks"><span class="idx">30</span>
+        <h3>Капучино</h3><div class="wt">кофе с собой</div><p>Идеальная пара к тёплому пирожку.</p>
+        <div class="row"><span class="price"><small>от</small> 180 ₽</span></div></article>
+    </div>
+
+    <p class="note reveal" style="margin-top:50px">Источник позиций, описаний и цен — карточка организации на <a href="https://yandex.com/maps/org/pirogovaya/86559750538/" target="_blank" rel="noopener" style="color:var(--honey)">Яндекс Картах</a> (меню обновлено 25 августа). Наличие в течение дня уточняйте: <a href="tel:+79195501437" style="color:var(--honey)">+7 (919) 550-14-37</a>.</p>
   </div>
 </section>
 
 <section style="padding-top:0">
   <div class="wrap">
     <div class="cta-box reveal">
-      <h2>Нужен большой пирог к столу?</h2>
-      <p>Примем предварительный заказ: размер, начинка, время готовности.</p>
+      <h2>Соберём заказ под вас</h2>
+      <p>Большие пироги, караваи и наборы — берите заранее, обсудим начинку и время.</p>
       <a class="btn primary" href="tel:+79195501437" data-label="📞">📞 Позвонить</a>
       <a class="btn ghost" href="https://vk.ru/pirogi_nur" target="_blank" rel="noopener">Написать в ВК</a>
     </div>
@@ -108,6 +208,9 @@
   <div class="src">© 2026 Пироговая · Новый Уренгой · данные — <a href="https://yandex.com/maps/org/pirogovaya/86559750538/" target="_blank" rel="noopener">Яндекс Карты</a></div>
 </div></footer>
 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
